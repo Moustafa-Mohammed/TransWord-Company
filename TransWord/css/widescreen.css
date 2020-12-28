@@ -1,0 +1,18 @@
+#services .ser-item {
+  flex-basis: 45%;
+  flex-direction: column;
+}
+
+#services .ser-item img {
+  margin-bottom: 1rem;
+}
+
+#form .container {
+  padding: 10px;
+  padding-top: 150px;
+  width: 100%;
+}
+
+.input-field {
+  width: 50%;
+}

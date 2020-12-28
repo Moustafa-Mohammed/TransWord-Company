@@ -1,0 +1,288 @@
+/* Start Global */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Lovelo;
+  src: url(../fonts/Lovelo\ Black.otf);
+}
+
+body {
+  font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+/* Start Utility classes */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-gr {
+  color: #93cb52;
+}
+
+.lg-heading {
+  font-size: 2.5rem;
+  margin: 0.5rem auto;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+}
+
+hr {
+  border-color: #93cb52;
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.8rem;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.px-2 {
+  padding: 2rem 0;
+}
+
+.py-1 {
+  padding: 0 1rem;
+}
+
+
+/*Start Navbar*/
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-family: Lovelo, sans-serif;
+}
+
+#navbar-logo a {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style: none;
+  margin-top: 0.25rem;
+}
+
+nav ul li a {
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+}
+
+nav ul li a:hover {
+  background-color: #93cb52;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url(../images/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .flex {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.btn-gr {
+  border-radius: 5px;
+  border: none;
+  background-color: #93cb52;
+  padding: 5px 10px;
+  margin-top: 1rem;
+}
+
+.btn-gr:hover {
+  background-color: #44a81f;
+  transition-duration: 0.5s;
+}
+
+/* Start About */
+
+#about {
+  min-height: 200px;
+}
+
+#about .container .flex {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#about .container .flex p {
+  word-spacing: -2px;
+}
+
+/* Start Services */
+#services {
+  min-height: 600px;
+  background-color: #E0E0E0;
+  color: #000;
+  padding: 60px 0px;
+}
+
+#services .flex {
+  padding: .5rem;
+  justify-content: space-between;
+}
+
+#services .ser-item {
+  display: flex;
+  flex-basis: 40%;
+  text-align: center;
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+#services .ser-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+#services .ser-logo img {
+  display: block;
+  width: 105px;
+  background-color: rgba(155, 207, 205, 0.199);
+  border-radius: 20%;
+  padding: .25rem;
+  box-shadow: 0px 0px 10px gray, 0px 0px 10px gray;
+  border: 2px solid #09547C;
+  box-sizing: unset;
+}
+
+#services .ser-item h3 {
+  font-weight: 600px;
+  text-transform: uppercase;
+  color: #09547C;
+}
+
+#fixed-btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 20px;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: Lovelo, sans-serif;
+  position: fixed ;
+  bottom: 30px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#fixed-btn img {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 0px 10px gray;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 50%;
+}
+
+#form{
+  padding: 100px;
+  height: 100vh;
+  background-color: #E0E0E0;
+}
+
+form {
+  width: 100%;
+  margin: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  margin: 15px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  width: 50%;
+  display: block;
+  font-size: 1.25rem;
+}
+
+textarea {
+  width: 100%;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
+  height: 150px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+textarea::placeholder {
+  text-align: center;
+}
+
+#submit{
+	background: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: #000;
+  border: 1px solid #44a81f;
+  width: 100px;
+  font-size: 15px;
+  margin: 15px auto;
+  display: block;
+}
+
+#submit:hover {
+  background-color: #44a81f;
+  transition-duration: 0.5s;
+  color: white;
+}
+
+#form h1 {
+  color: #44a81f;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.green-border {
+  border: 1px solid #44a81f;
+}
