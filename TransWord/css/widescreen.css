@@ -1,11 +1,14 @@
+
 #services .ser-item {
-  flex-basis: 45%;
   flex-direction: column;
 }
 
-#services .ser-item img {
+#services .ser-logo {
   margin-bottom: 1rem;
+  margin-right: 0;
+  width: 60%;
 }
+
 
 #form .container {
   padding: 10px;
@@ -14,5 +17,5 @@
 }
 
 .input-field {
-  width: 50%;
+  width: 65%;
 }

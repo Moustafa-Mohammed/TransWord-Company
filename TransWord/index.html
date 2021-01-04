@@ -6,40 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
   <title>Transword Translation Company</title>
+
+  <!-- CSS links -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" media="screen and (max-width:1000px" href="./css/widescreen.css">
   <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
 </head>
 
 <body>
-  <nav>
+
+  <header>
     <div class="container">
       <div class="flex">
+
         <div id="navbar-logo">
+
           <a class="navbar-brand" href="index.html">
             <h1 class="lg-heading"><span class="text-gr">Trans</span>Word</h1>
           </a>
+
+          <div class="nav-toggler" id="toogler">
+            <img id="barsIcon" class="nav-icon" src="./images/bars.svg" alt="navbar-icon-bars">
+            <img class="nav-icon hidden" src="./images/close.svg" alt="navbar-icon-bars">
+          </div>
         </div>
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link" href="#showcase">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/contact.html">Contact</a>
-          </li>
-        </ul>
+
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#showcase">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
     </div>
-  </nav>
+  </header>
+  <!-- End of navbar -->
 
   <!-- Start Header -->
-  <header id="showcase">
+  <main id="showcase">
     <div class="flex">
       <h1 class="lg-heading">
         Translation services
@@ -50,29 +65,32 @@
       </h3>
       <a href="#about" type="button" class="btn-gr">Get to know us</a>
     </div>
-  </header>
+  </main>
 
   <!-- Start About -->
 
-  <section id="about" class="bg-light px-2">
-    <div class="container">
-      <div class="flex">
-        <h1 class="lg-heading"><span class="text-gr">About</span> Us</span></h1>
-        <hr>
-        <p>
-          <strong>TransWord</strong> is a translation agency based in <strong>Egypt</strong> with
-          over 20 years’ experience in bringing people together
-          through our linguistic services. At Transword Translations, our clients have an expert team of professionals
-          available: qualified native translators, editors and interpreters who carry out the meticulous work of
-          conveying
-          the same ideas in different languages. Transword Translations stands out for its speed and high-quality.
-        </p>
-      </div>
-    </div>
+  <section id="about">
+        <div class="aboutus-img">
+          <img src="./images/aboutus.jpg" alt="">
+        </div>
+
+        <div class="aboutus-txt">
+          <h1 class="lg-heading"><span class="text-gr">About</span> Us</span></h1>
+          <hr>
+          <p>
+            <strong>TransWord</strong> is a translation agency based in <strong>Egypt</strong> with
+            over 20 years’ experience in bringing people together
+            through our linguistic services. At Transword Translations, our clients have an expert team of professionals
+            available: qualified native translators, editors and interpreters who carry out the meticulous work of
+            conveying
+            the same ideas in different languages. Transword Translations stands out for its speed and high-quality.
+          </p>
+        </div>
+
   </section>
 
   <!-- Start Services -->
-  <section id="services" class="bg-dark">
+  <section id="services"">
     <div class="container">
       <div class="flex">
         <div class="ser-item">
@@ -81,7 +99,7 @@
           </div>
           <div>
             <h3>Legal Translation</h3>
-            <p>Claims,  decisions and judgments,  certificates,  expert reports,  contracts,  deeds,  wills and policies,  etc.
+            <p>Claims, decisions and judgments, certificates, expert reports, contracts, deeds, wills and policies, etc.
             </p>
           </div>
         </div>
@@ -91,7 +109,7 @@
           </div>
           <div>
             <h3>Official Translation</h3>
-            <p>Birth certificates,  academic transcripts,  articles of association,  passports and certificates,  etc.
+            <p>Birth certificates, academic transcripts, articles of association, passports and certificates, etc.
             </p>
           </div>
         </div>
@@ -101,7 +119,7 @@
           </div>
           <div>
             <h3>Financial Translation</h3>
-            <p>Audit reports,  financing agreements,  company presentations,  banking information and annual accounts,  etc.
+            <p>Audit reports, financing agreements, company presentations, banking information and annual accounts, etc.
             </p>
           </div>
         </div>
@@ -111,7 +129,8 @@
           </div>
           <div>
             <h3>Medical Translation</h3>
-            <p>Scientific articles,  pharmaceutical leaflets,  clinical and laboratory trials,  medical reports and patents,  etc.
+            <p>Scientific articles, pharmaceutical leaflets, clinical and laboratory trials, medical reports and
+              patents, etc.
             </p>
           </div>
         </div>
@@ -121,7 +140,7 @@
           </div>
           <div>
             <h3>Technical Translation</h3>
-            <p>Safety manuals, instructions, technical specifications,  user manuals and guides, etc.
+            <p>Safety manuals, instructions, technical specifications, user manuals and guides, etc.
             </p>
           </div>
         </div>
@@ -141,7 +160,7 @@
           </div>
           <div>
             <h3>Advertising and Marketing Translation</h3>
-            <p>Working documents,  commercial letters,  social media,  advertising,  marketing,  tourism,  etc.
+            <p>Working documents, commercial letters, social media, advertising, marketing, tourism, etc.
             </p>
           </div>
         </div>
@@ -151,7 +170,7 @@
           </div>
           <div>
             <h3>Audio and Visual Translation</h3>
-            <p>Subtitling,  spotting and transcription of documentaries,  interviews and corporate videos,  etc.
+            <p>Subtitling, spotting and transcription of documentaries, interviews and corporate videos, etc.
             </p>
           </div>
         </div>

@@ -3,18 +3,47 @@
   padding-bottom: 1rem;
 }
 
-#navbar ul li a {
-  padding: 0.25rem .2rem;
-  margin: 0 0.125rem;
+header .flex {
+  align-items: flex-start;
 }
 
-#services .ser-logo img {
-  margin-top: 1.5rem;
-  width: 150px;
+.nav-toggler {
+  display: block;
+  cursor: pointer;
+}
+
+.nav-toggler img {
+  width: 20px;
+}
+
+nav {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  transition: 250ms height ease-in-out;
+}
+
+nav ul li {
+  display: block;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+nav ul li a {
+  padding: 8px;
 }
 
 #services .ser-item {
   flex-direction: column;
+  width: 100%;
+}
+
+#services .ser-logo {
+  max-width: 30%;
+}
+
+#services .ser-item p {
+  padding: 0 20px;
 }
 
 .lg-heading {
@@ -26,7 +55,42 @@
   height: 100vh;
 }
 
+#about {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#about div {
+  flex-basis: 50%;
+}
+
+#about .aboutus-txt {
+  padding: 20px 10px;
+}
+
+#fixed-btn {
+  bottom: 15px;
+  right: 0px;
+}
+
+#form h1 {
+  font-size: 1.25rem;
+}
+
+#form {
+  padding: 0;
+}
+
+form {
+  width: 100%;
+  margin: 0px;
+}
 
 .input-field {
-  width: 95%;
+  width: 90%;
 }
+
+textarea {
+  margin: 15px auto;
+}
+

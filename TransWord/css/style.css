@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Start Utility classes */
@@ -48,16 +48,7 @@ body {
   margin: 8px auto;
 }
 
-/* background dark */
-.bg-dark {
-  background-color: #333;
-  color: #fff;
-}
 
-/* background light */
-.bg-light {
-  background-color: #f4f4f4;
-}
 
 /* green horizontal rule */
 hr {
@@ -73,55 +64,63 @@ p {
   margin-top: 1rem;
 }
 
-.px-2 {
-  padding: 32px 0;
-}
-
-.py-1 {
-  padding: 0 16px;
-}
-
-
-/*Start Navbar*/
-nav {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  font-family: Lovelo, sans-serif;
-}
-
 a {
   text-decoration: none;
   color: #fff;
 }
 
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Start Navbar*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-family: Lovelo, sans-serif;
+  background-color: #dce1e3;
+}
+
+
+
 #navbar-logo a {
   font-size: 40px;
+  color: #5C5F58;
 }
 
-nav ul {
-  display: flex;
+.nav-toggler {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
-nav ul li {
+
+header ul li {
   list-style: none;
-  margin-top: 4px;
+  display: inline-block;
 }
 
-nav ul li a {
+header ul li a {
   padding: 8px;
   margin: 0 4px;
+  color: #000;
+  border-radius: 5px;
 }
 
-nav ul li a:hover {
+header ul li a:hover {
   background-color: #93cb52;
-  border-radius: 5px;
   transition-duration: 0.5s;
 }
 
 /* Showcase */
 #showcase {
-  background: #333 url(../images/showcase.jpg) no-repeat center center/cover;
+  background: url(../images/showcase.jpg) no-repeat center center/cover;
   height: 100vh;
   color: #fff;
 }
@@ -132,14 +131,14 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .btn-gr {
   border-radius: 5px;
   border: none;
   background-color: #93cb52;
-  padding: 5px 10px;
+  padding: 8px 12px;
   margin-top: 1rem;
 }
 
@@ -149,28 +148,39 @@ nav ul li a:hover {
 }
 
 /* Start About */
-
 #about {
-  min-height: 200px;
+  background-color: #164A41;
+  display: flex;
 }
 
-#about .container .flex {
-  flex-direction: column;
+#about div {
+  flex-basis: 50%;
+}
+
+#about .aboutus-txt {
+  padding: 0px 50px;
   text-align: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 70px;
+  justify-content: center;
 }
 
-#about .container .flex p {
+#about .aboutus-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#about p {
   word-spacing: -2px;
+  color: #fff;
 }
 
 /* Start Services */
 #services {
   min-height: 600px;
-  background-color: #E0E0E0;
-  color: #000;
+  background-color: #4D774E;
+  color: #DADED4;
   padding: 60px 0px;
 }
 
@@ -183,32 +193,31 @@ nav ul li a:hover {
   display: flex;
   flex-basis: 40%;
   text-align: center;
+  align-items: center;
   padding: .5rem;
   margin: 1rem 0;
 }
 
 #services .ser-logo {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-right: 1rem;
+  border-radius: 50%;
+  width: 70%;
 }
 
 #services .ser-logo img {
-  display: block;
-  width: 105px;
-  background-color: rgba(155, 207, 205, 0.199);
-  border-radius: 20%;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
   padding: .25rem;
-  box-shadow: 0px 0px 10px gray, 0px 0px 10px gray;
-  border: 2px solid #09547C;
-  box-sizing: unset;
+  border: 2px solid #93cb52;
+  background-color: #fff;
 }
 
 #services .ser-item h3 {
   font-weight: 600px;
   text-transform: uppercase;
-  color: #09547C;
+  color: #fff;
 }
 
 #fixed-btn {
@@ -227,15 +236,23 @@ nav ul li a:hover {
 #fixed-btn img {
   width: 70px;
   height: 70px;
-  box-shadow: 0px 0px 10px gray;
-  box-shadow: 0px 0px 10px gray;
+  box-shadow: 0px 0px 10px #F1B24A;
+  box-shadow: 0px 0px 10px #F1B24A;
   border-radius: 50%;
 }
 
-#form{
+#form h1 {
+  font-family: 'lovelo';
+  color: #F1B24A;
+  font-size: 2rem;
+  margin: 15px;
+  text-align: center;
+}
+
+#form {
   padding: 100px;
   height: 100vh;
-  background-color: #E0E0E0;
+  background-color: #164A41;
 }
 
 form {
@@ -246,8 +263,7 @@ form {
 .input-field {
   padding: 10px;
   margin: 15px;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-  border-radius: 10px;
+  border-radius: 5px;
   width: 50%;
   display: block;
   font-size: 1.25rem;
@@ -255,10 +271,9 @@ form {
 
 textarea {
   width: 100%;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
   height: 150px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 1.5rem;
   margin: 15px;
 }
@@ -269,30 +284,22 @@ textarea::placeholder {
 
 #submit{
 	background: white;
-	padding: 10px 20px;
+	padding: 12px 25px;
 	border-radius: 5px;
-	color: #000;
-  border: 1px solid #44a81f;
-  width: 100px;
+  border: 2px solid #F1B24A;
   font-size: 15px;
   margin: 15px auto;
   display: block;
+  color:#F1B24A;
+  font-family: 'lovelo';
 }
 
 #submit:hover {
-  background-color: #44a81f;
+  background-color: #F1B24A;
   transition-duration: 0.5s;
   color: white;
 }
 
-#form h1 {
-  font-family: 'Roboto Slab', serif;
-  color: #44a81f;
-  font-size: 2rem;
-  margin: 15px;
-  text-align: center;
-}
-
 .green-border {
-  border: 1px solid #44a81f;
+  border: 1px solid #F1B24A;
 }

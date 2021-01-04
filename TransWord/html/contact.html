@@ -10,14 +10,23 @@
     <link rel="stylesheet" media="screen and (max-width:768px)" href="../css/mobile.css">
   </head>
 <body>
-  <nav class="bg-dark">
+  <header>
     <div class="container">
       <div class="flex">
+
         <div id="navbar-logo">
-          <a class="navbar-brand" href="index.html">
+
+          <a class="navbar-brand" href="../index.html">
             <h1 class="lg-heading"><span class="text-gr">Trans</span>Word</h1>
           </a>
+
+          <div class="nav-toggler" id="toogler">
+          <img id="barsIcon" class="nav-icon" src="../images/bars.svg" alt="navbar-icon-bars">
+          <img class="nav-icon hidden" src="../images/close.svg" alt="navbar-icon-bars">
+          </div>
         </div>
+
+        <nav>
         <ul>
           <li class="nav-item">
             <a class="nav-link" href="../index.html#showcase">Home</a>
@@ -28,13 +37,13 @@
           <li class="nav-item">
             <a class="nav-link" href="../index.html#services">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
         </ul>
+      </nav>
+      
       </div>
     </div>
-  </nav>
+  </header>
+  <!-- End of navbar -->
 
 
   <section id="form">
@@ -51,6 +60,8 @@
         </form>
     </div>
   </section>
+
+  <a id="fixed-btn"><img src="../images/scroll-top.png" alt=""></a>
 
   <script src="../js/main.js"></script>
 </body>

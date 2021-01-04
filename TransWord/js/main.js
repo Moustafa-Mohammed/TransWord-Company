@@ -1,5 +1,10 @@
 const backToTopbtn = document.querySelector('#fixed-btn');
-const navbar = document.querySelector("nav");
+const navbar = document.querySelector('header');
+
+const navToggler = document.querySelector('.nav-toggler');
+const nav = document.querySelector('nav');
+const navIcon = document.querySelectorAll('.nav-icon');
+const barsIcon = document.querySelector('#barsIcon');
 
 
 
@@ -24,16 +29,22 @@ backToTopbtn.addEventListener('click', () => {
 });
 
 
+// Add click event to the nav toggler div
+navToggler.addEventListener('click', () => {
+  nav.classList.toggle('open');
+  navIcon.forEach(icon => {
+    icon.classList.toggle('hidden');
+  });
+});
 
-
-window.onscroll = () => {
-  const showcase = document.querySelector("#showcase")
-
-  if (window.scrollY > (showcase.offsetTop + showcase.offsetHeight)) {
-    navbar.classList.add("bg-dark");
-  } else {
-    navbar.classList.remove("bg-dark");
+window.addEventListener('resize', () => {
+  if(document.body.clientWidth > 768) {
+    nav.classList.remove('open');
+    navIcon.forEach(icon => {
+      icon.classList.add('hidden');
+    });
+    barsIcon.classList.remove('hidden');
   }
-};
 
-   
+});
+
