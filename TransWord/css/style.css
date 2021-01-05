@@ -241,6 +241,23 @@ header ul li a:hover {
   border-radius: 50%;
 }
 
+
+#form {
+  background-color: #4D774E;
+  padding-top: 70px;
+  height: 100vh;
+ }
+
+#form .container {
+  width: 400px;
+  margin: 30px auto;
+  background-color: #164A41;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #F1B24A;
+  box-shadow: 0px 0px 5px #F1B24A;
+  height: auto;
+}
+
 #form h1 {
   font-family: 'lovelo';
   color: #F1B24A;
@@ -249,24 +266,27 @@ header ul li a:hover {
   text-align: center;
 }
 
-#form {
-  padding: 100px;
-  height: 100vh;
-  background-color: #164A41;
-}
-
 form {
-  width: 100%;
-  margin: 10px;
+  padding: 30px;
 }
 
 .input-field {
   padding: 10px;
-  margin: 15px;
   border-radius: 5px;
-  width: 50%;
-  display: block;
-  font-size: 1.25rem;
+  width: 85%;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  
+}
+
+.fas {
+  display: inline-block;
+  color: #F1B24A;
+  font-size: 1.5rem;
+  border: 1px solid #F1B24A;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 textarea {
@@ -275,7 +295,7 @@ textarea {
   padding: 10px;
   border-radius: 5px;
   font-size: 1.5rem;
-  margin: 15px;
+  margin: 15px 0;
 }
 
 textarea::placeholder {

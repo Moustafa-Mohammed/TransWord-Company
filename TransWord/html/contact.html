@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <title>Contact Us</title>
+
+    <!-- Fontawosome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" media="screen and (max-width:1000px" href="../css/widescreen.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="../css/mobile.css">
+
   </head>
 <body>
   <header>
@@ -48,10 +56,15 @@
 
   <section id="form">
     <div class="container">
-      <h1>Welcome to Our contact page</h1>
+      
         <form action="index.html" method="post">
+
+          <h1>Welcome to Our contact page</h1>
+
+          <i class="fas fa-user"></i>
           <input type="text" placeholder="Name" class="input-field green-border" required id="name-input">
     
+          <i class="fas fa-at"></i>
           <input type="e-mail" placeholder="e-mail" class="input-field green-border" required id="pass-input">
     
           <textarea class="green-border" name="" id="message" placeholder="Message"></textarea>
