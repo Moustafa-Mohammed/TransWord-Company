@@ -210,14 +210,14 @@ header ul li a:hover {
   height: auto;
   border-radius: 50%;
   padding: .25rem;
-  border: 2px solid #93cb52;
+  border: 2px solid #F1B24A;
   background-color: #fff;
 }
 
 #services .ser-item h3 {
   font-weight: 600px;
   text-transform: uppercase;
-  color: #fff;
+  color: #F1B24A;
 }
 
 #fixed-btn {
@@ -277,7 +277,7 @@ form {
   display: inline-block;
   font-size: 1.5rem;
   margin-bottom: 30px;
-  
+  border: 1px solid #F1B24A;
 }
 
 .fas {
@@ -296,6 +296,7 @@ textarea {
   border-radius: 5px;
   font-size: 1.5rem;
   margin: 15px 0;
+  border: 1px solid #F1B24A;
 }
 
 textarea::placeholder {
@@ -318,8 +319,4 @@ textarea::placeholder {
   background-color: #F1B24A;
   transition-duration: 0.5s;
   color: white;
-}
-
-.green-border {
-  border: 1px solid #F1B24A;
 }
