@@ -6,6 +6,7 @@ const nav = document.querySelector('nav');
 const navIcon = document.querySelectorAll('.nav-icon');
 const barsIcon = document.querySelector('#barsIcon');
 
+const navLinks = document.querySelectorAll('li a');
 
 
 backToTopbtn.style.display = 'none';
@@ -37,6 +38,7 @@ navToggler.addEventListener('click', () => {
   });
 });
 
+// hide the nav when the window is greater than mobile size
 window.addEventListener('resize', () => {
   if(document.body.clientWidth > 768) {
     nav.classList.remove('open');
@@ -48,3 +50,9 @@ window.addEventListener('resize', () => {
 
 });
 
+// hide the nav when clicking a nav link
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    nav.classList.remove('open');
+  })
+});
