@@ -100,6 +100,13 @@ header {
   right: 1rem;
 }
 
+.nav-toggler img {
+  transition: 250ms transform ease-in-out;
+}
+
+.nav-toggler img:hover {
+  transform: rotate(180deg);
+}
 
 header ul li {
   list-style: none;
